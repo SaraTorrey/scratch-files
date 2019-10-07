@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Practice jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous">
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <h1>Hello!</h1>
+        </div>
+        <div>
+            <ul>
+                <li>Sweet</li>
+                <li>Cupcake</li>
+                <li>Honey</li>
+            </ul>
+            <span>Name</span>
+            <input value="dan">
+            <br/>
+            <br/>
+            <button>Submit Your Favorite</button>
+        </div>
+    </body>
+
+    <script>
+        $( document ).ready(function() {
+            console.log( "Doc is ready!" );
+            $("button").click(function () {
+               $('input').val("Changed!");
+               alert($('input').val());
+            });
+        });
+    </script>
+</html>
